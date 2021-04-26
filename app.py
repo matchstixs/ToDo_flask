@@ -60,18 +60,18 @@ def delete(id):
         return 'error 202: task not found to delete'
 
 # UPDATE
-@app.route("/update/<int:id>", methods=['POST, GET'])
+@app.route("/update/<int:id>", methods=['POST', 'GET'])
 def update(id):
     task = Todo.query.get_or_404(id)
 
     if request.method == 'POST':
         task.content = request.form["content"]
             
-        # try:
-        #     db.session.commit()
-        #     return redirect('/')
-        # except:
-            # return 'error 203: task failed to update'
+        try:
+            db.session.commit()
+            return redirect('/')
+        except:
+            return 'error 203: task failed to update'
     
     else:
         return render_template('update.html', task=task)
