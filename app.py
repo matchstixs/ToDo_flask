@@ -2,14 +2,13 @@ from flask import Flask, render_template, request, redirect;
 from flask_sqlalchemy import SQLAlchemy;
 from datetime import datetime;
 
-
 # set up application
 app = Flask(__name__)
 # set up database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
 # 3/ is relative path; 4/ is absolute path
-# db init
 db = SQLAlchemy(app);
+# db init
 
 class Todo(db.Model):
     # database constructor
@@ -24,7 +23,7 @@ class Todo(db.Model):
         return '<Task %r>' % self.id
         # return task and id of task everytime new object is created
 
- #  CREATE
+ # CREATE
 # route,  input url/string of route, callback methods
 @app.route('/', methods=['POST', 'GET'])
 
