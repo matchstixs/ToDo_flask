@@ -1,5 +1,6 @@
 # ToDo app
 
+## built on
 - Flask python
 - conda version: 4.9.2
 - SQLAlchemy DB
@@ -9,8 +10,7 @@
 - working frontend
 - integrated DB, allows CRUD of tasks
 
-# To Do
-- css beautify
+# Future Updates:
 - if no tasks show create tasks page?
 
 ## Run App

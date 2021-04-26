@@ -1,4 +1,53 @@
-body {
+body, html {
     margin: 0;
     font-family: sans-serif;
+    background-color: #FFFF9F;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.update-task {
+    margin: 0 auto;
+    width: 400px;
+}
+
+/* input bar */
+#content {
+    width: 70%;
+}
+
+.table-header {
+    color: #5E00CF;
+}
+
+h3 {
+    text-align: center;
+    color: #084a8d;
+}
+
+form {
+    margin-top: 20px;
+}
+
+table, th {
+    border: 1px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    color: #084a8d;
+    font-weight: bold;
 }
